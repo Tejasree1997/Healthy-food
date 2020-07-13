@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+    <link rel="stylesheet" type="text/css" href="css/healtyfood-Style.css">
+    <style>
+        legend{
+            color:blue;
+        }
+        input[type=text]{
+            width:35%;
+        }
+        label{
+            font-family:monospace;
+        }
+        fieldset{
+            box-shadow:7px 4px 10px 3px gray;
+        }
+    </style>
+</head>
+
+<body>
+   <header class="top">
+      <nav >
+         <div class="container"  >
+         <div> <img  src="images/canada_food.png" alt="canada fodd" width="200px" height="200px"></div>
+
+          <div class="pageTitle"> <h3>Healthy eating habits</h3></div>
+          <div> <a href="Details_Form.html">Sign-up</a> </div>
+                <div> <a href="Recipes.html"> Recipes</a> </div>
+                <div> <a href="tips.html">Tips</a> </div>
+                <div> <a href="index.html"> Home</a> </div>
+
+         <div class="topRight" >  <img  src="images/image2topright.jpg" alt="rightImage" width="250px" height="200px"></div>
+          </div>
+       </nav>
+    </header>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <br><br>
+            <label for="first_name">First Name:</label><br><input type="text" placeholder="Write your first name">
+            <br><br>
+            <label for="last_name">Last Name:</label><br><input type="text" placeholder="Write your last name">
+            <br><br>
+            <label for="email_id">E-mail:</label><br><input type="email" placeholder="Enter your email id">
+            <br><br>
+            <label for="address">Address:</label><br><input type="text" placeholder="Write your entire address">
+            <br><br>
+            <label>Sex:</label>
+            <input type="radio" name="gen" checked><label for="female">Female</label>
+            <input type="radio" name="gen"><label for="male">Male</label>
+            <input type="radio" name="gen"><label for="other">Other</label>
+
+
+
+
+
+
+        </fieldset>
+        <fieldset>
+            <legend>Favourite Movies</legend>
+            <label>Choose which type of movies you like</label>
+            <input type="checkbox"><label for=Action>Action</label>
+            <input type="checkbox"><label for="comedy">Comedy</label>
+            <input type="checkbox"><label for="horror">Horror</label>
+            <input type="checkbox"><label for="romantic">Romantic</label>
+            <input type="checkbox"><label for="inspiration">Inspiration</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Comments</legend>
+            <textarea name="txt-area1" id="" cols="30" rows="10" placeholder="Write your comment here"></textarea>
+        </fieldset>
+        <br><input type="submit" value="Send">
+        <input type="submit" value="Envoyer">
+    </form>
+
+</body>
+
+</html>
